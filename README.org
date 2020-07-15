@@ -1,0 +1,39 @@
+* ohmyksh
+
+Have your cake and eat it too!
+
+~ohmyksh~ is a framework for expanding OpenBSD's [[https://man.openbsd.org/ksh][ksh]]. It offers:
+
+- completions :: for common things like [[https://man.openbsd.org/man][man]] pages, [[https://man.openbsd.org/ssh][ssh]] known_hosts and git
+  commands.
+- extensions :: to import bulk functionality, including git-prompt, OpenBSD
+  specific tooling, disabling color.. etc. 
+- prompts :: a decent selection of useful prompts.
+
+** Completions
+
+| Name | Completes              |
+|------+------------------------|
+| man  | man pages              |
+| ssh  | ssh known hosts        |
+| vmd  | VM names               |
+| rc   | OpenBSD rcctl commands |
+
+** Extensions
+
+| Name       | Description                                               |
+|------------+-----------------------------------------------------------|
+| fonts      | Load fonts from common locations.                         |
+| fzf        | -                                                         |
+| git-prompt | A port of git-prompt for KSH.                             |
+| k          | A tool to quickly change directories.                     |
+| nocolor    | Disable terminal color options for many tools.            |
+| openbsd    | A set of tools for working with the OpenBSD source trees. |
+
+
+** Prompts
+
+| Name       | Example                   |
+|------------+---------------------------|
+| q          | ~qbit@litr[0]:~$~         |
+| og-openbsd | ~$ ~                      |
