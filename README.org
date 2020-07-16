@@ -14,10 +14,12 @@ Have your cake and eat it too!
 
 | Name | Completes              |
 |------+------------------------|
-| man  | man pages              |
-| ssh  | ssh known hosts        |
-| vmd  | VM names               |
-| rc   | OpenBSD rcctl commands |
+| git | add, fetch... |
+| gopass | audit, config... |
+| man | man pages |
+| rc | OpenBSD rc scripts and rc commands |
+| ssh | ssh known hosts |
+| vmd | vmctl commands and VM names |
 
 ** Extensions
 
