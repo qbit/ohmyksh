@@ -36,4 +36,4 @@ Have your cake and eat it too!
 | Name       | Example                   |
 |------------+---------------------------|
 | q          | ~qbit@litr[0]:~$~         |
-| og-openbsd | ~$ ~                      |
+| og-openbsd | ~$~                       |
