@@ -14,9 +14,11 @@ pclean() {
 }
 
 maintains() {
-	cd /usr/ports/*/$1 > /dev/null 2>&1 && \
-		make show=MAINTAINER || \
-		echo "No port '/usr/ports/*/$1'"
+	(
+		cd /usr/ports/*/$1 > /dev/null 2>&1 && \
+			make show=MAINTAINER || \
+			echo "No port '/usr/ports/*/$1'"
+	)
 }
 
 seq() {
