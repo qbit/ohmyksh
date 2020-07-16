@@ -1,21 +1,3 @@
+
 PASS_LIST=$(gopass ls -f)
-set -A complete_gopass -- $PASS_LIST \
-	audit \
-	bin binary \
-	clone completion config copy cp create \
-	delete \
-	edit \
-	find fix fsck \
-	generate git grep \
-	h help hotp \
-	init insert \
-	jsonapi \
-	list ls \
-	mounts move mv \
-	new \
-	otp \
-	recipients remove rm \
-	search set setup show sync \
-	templates totp \
-	unclip update \
-	version
+set -A complete_gopass -- $PASS_LIST agent audit binary bin clone completion config copy cp create new delete remove rm edit set find search fsck generate git-credential jsonapi otp totp hotp git grep history hist init insert list ls move mv mounts recipients setup show sync templates unclip update version xc help h
