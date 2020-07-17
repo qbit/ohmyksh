@@ -1,3 +1,3 @@
 h() {
-	history | fzf
+	fc -ln | fzf | ksh
 }
