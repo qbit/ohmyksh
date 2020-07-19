@@ -1,0 +1,6 @@
+* git-prompt extension
+
+This extension is a port of the [[https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh][packaged git-prompt]] script to OpenBSD's ksh.
+
+It allows one to include git information in your PS1 or other scripts.
+
