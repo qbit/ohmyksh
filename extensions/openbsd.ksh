@@ -13,6 +13,10 @@ pclean() {
 	find . -size 0 -exec rm {} \;
 }
 
+cdw() {
+	cd $(make show=WRKSRC)
+}
+
 maintains() {
 	(
 		cd /usr/ports/*/$1 > /dev/null 2>&1 && \
