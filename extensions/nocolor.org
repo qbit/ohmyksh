@@ -1,0 +1,6 @@
+* nocolor
+
+This extension attempts to disable terminal color for known programs /
+libraries. [[https://no-color.org/][no-color]] was used as a guide!
+
+

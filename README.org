@@ -16,10 +16,10 @@ Have your cake and eat it too!
 |--------+------------------------------------|
 | [[completions/git.org][git]]    | add, fetch...                      |
 | [[completions/gopass.org][gopass]] | audit, config...                   |
-| [[completions/man.org][man]] | man pages                          |
-| [[completions/rc.org][rc]] | OpenBSD rc scripts and rc commands |
-| [[completions/ssh.org][ssh]] | ssh known hosts                    |
-| [[completions/vmd.org][vmd]] | vmctl commands and VM names        |
+| [[completions/man.org][man]]    | man pages                          |
+| [[completions/rc.org][rc]]     | OpenBSD rc scripts and rc commands |
+| [[completions/ssh.org][ssh]]    | ssh known hosts                    |
+| [[completions/vmd.org][vmd]]    | vmctl commands and VM names        |
 
 ** Extensions
 
@@ -35,10 +35,12 @@ Have your cake and eat it too!
 
 ** Prompts
 
-| Name       | Example           |
-|------------+-------------------|
-| [[prompts/q.org][q]]          | ~qbit@litr[0]:~$~ |
-| [[prompts/og-openbsd.org][og-openbsd]] | ~$~               |
+| Name       | Example                        | Extensions used |
+|------------+--------------------------------+-----------------|
+| [[prompts/q.org][q]]          | ~qbit@litr[0]:~$~              | git-prompt      |
+| [[prompts/plain.org][plain]]      | ~ litr:~/src/ohmyksh/prompts$~ | -               |
+| [[prompts/og-openbsd.org][og-openbsd]] | ~$~                            | -               |
+| [[prompts/9.org][9]]          | ~%~                            | -               |
 
 ** Example usage
 
