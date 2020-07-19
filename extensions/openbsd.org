@@ -1,0 +1,15 @@
+* openbsd
+
+This extension adds a number of useful OpenBSD specific tools.
+
+The following functions are added:
+
+| Name        | Purpose                                                                                             |
+|-------------+-----------------------------------------------------------------------------------------------------|
+| src()       | Similar to plan9's [[http://man.9front.org/1/src][src(1)]] command. It drops you to ~/usr/src/*/<arg 1>~.                            |
+| port()      | Like ~src()~, but for ~/usr/ports~.                                                                 |
+| pclean()    | Remove ~.orig~ and empty files from ~$CWD~.                                                         |
+| cdw()       | Intended to be used from a port directory. Will change directory to ~$WRKSRC~.                      |
+| maintains() | Similar to ~port()~, this will display the ~$MAINTAINER~ of a port passed in as the first argument. |
+| seq()       | A shell implementation of Linux's [[https://linux.die.net/man/1/seq][seq(1)]] command. It supports alpha and numeric ranges.             |
+
