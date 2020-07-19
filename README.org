@@ -55,13 +55,10 @@ set -A my_paths -- \
 paths "${my_paths[@]}"
 
 load_extension fonts
-load_extension fzf
-load_extension git-prompt
 load_extension k
 load_extension nocolor
 load_extension openbsd
 
-#load_completion man
 load_completion ssh
 load_completion vmd
 load_completion rc
@@ -70,5 +67,6 @@ load_completion git
 
 alias vi=vim
 
+# the q prompt auto-loads the git-prompt extension
 set_prompt q
 #+end_src
