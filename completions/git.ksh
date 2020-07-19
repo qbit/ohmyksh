@@ -1,3 +1,4 @@
+#: | git | add, fetch... |
 set -A complete_git_1 -- \
 	add am archive \
 	bisect branch bundle \

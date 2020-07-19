@@ -1,3 +1,4 @@
+#: | ssh | ssh known hosts |
 set -A SSH_KNOWN_HOSTS ~/.ssh/known_hosts
 
 if [ -f /etc/ssh/ssh_known_hosts ]; then

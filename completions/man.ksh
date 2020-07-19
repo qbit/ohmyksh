@@ -1,3 +1,4 @@
+#: | man | man pages |
 MAN_CACHE=$LOAD_PATH/cache/man
 if [ ! -f $MAN_CACHE ]; then
 	MANPATH=/usr/share/man man -k Nm~. | cut -d\( -f1 | tr -d , | \

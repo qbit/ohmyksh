@@ -1,3 +1,4 @@
+#: | vmd | vmctl commands and VM names |
 pgrep -fq '/usr/sbin/vmd'
 if [ $? = 0 ]; then
 	set -A complete_vmctl -- console load reload start stop reset status send receive
