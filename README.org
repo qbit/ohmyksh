@@ -44,7 +44,7 @@ Have your cake and eat it too!
 
 #+begin_src shell
 OHMYKSH_DIR=/home/qbit/src/ohmyksh
-. ~${ONMYKSH_DIR}/ohmy.ksh
+. ~${OHMYKSH_DIR}/ohmy.ksh
 
 set -A my_paths -- \
 	/usr/ports/infrastructure/bin \
