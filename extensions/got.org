@@ -1,0 +1,8 @@
+* got
+
+This extension adds helper functions to the [[https://gameoftrees.org/][got]] tool.
+
+| Function   | Description                                                             |
+|------------+-------------------------------------------------------------------------|
+| ~got-push~ | Pushes (~git push~) from the bare repository found in ~.got/repository~ |
+
