@@ -1,14 +1,29 @@
 #: | ssh | ssh known hosts |
-set -A SSH_KNOWN_HOSTS ~/.ssh/known_hosts
+read_known_hosts() {
+        local _file=$1 _line _host
 
-if [ -f /etc/ssh/ssh_known_hosts ]; then
-	SSH_KNOWN_HOSTS="${SSH_KNOWN_HOSTS[@]} /etc/ssh/ssh_known_hosts"
-fi
+        while read _line ; do
+          _line=${_line%%#*} # delete comments
+          _line=${_line%%@*} # ignore markers
+          _line=${_line%% *} # keep only host field
 
-HOST_LIST=$(awk \
-	'{split($1,a,","); gsub("].*", "", a[1]); gsub("\\[", "", a[1]); print a[1] " root@" a[1]}' \
-		$SSH_KNOWN_HOSTS | sort | uniq)
+          [[ -z $_line ]] && continue
 
-set -A complete_ssh -- $HOST_LIST
-set -A complete_scp -- $HOST_LIST
-set -A complete_mosh -- $HOST_LIST
+          local IFS=,
+          for _host in $_line; do
+            _host=${_host#\[}
+            _host=${_host%%\]*}
+            for i in ${HOST_LIST[*]}; do
+              [[ $_host == $i ]] && continue 2
+            done
+            set -s -A HOST_LIST ${HOST_LIST[*]} $_host
+          done
+        done <$_file
+}
+
+[[ -s /etc/ssh/ssh_known_hosts ]] && read_known_hosts /etc/ssh/ssh_known_hosts
+[[ -s ~/.ssh/known_hosts ]] && read_known_hosts ~/.ssh/known_hosts
+
+set -A complete_ssh -- ${HOST_LIST[*]}
+set -A complete_scp -- ${HOST_LIST[*]}
+set -A complete_mosh -- ${HOST_LIST[*]}
