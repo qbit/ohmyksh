@@ -13,5 +13,6 @@ function got-push {
         done
         local r
         read r < "$p/.got/repository"
-        (cd "$r" && git push $*)
+	(cd "$r" && git push "$@")
 }
+
