@@ -16,3 +16,12 @@ function got-push {
 	(cd "$r" && git push "$@")
 }
 
+function __got_ps1 {
+	local _format _branch _status
+	_format=$1
+	_branch=$(got branch 2>/dev/null | grep -v conf_set_now)
+	_status=$?	
+	if [ $_status == 0 ]; then
+		printf "$_format" $_branch
+	fi
+}
