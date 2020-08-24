@@ -15,29 +15,32 @@ Have your cake and eat it too!
 | Name   | Completes                          |
 |--------+------------------------------------|
 | [[completions/git.org][git]]    | add, fetch...                      |
+| [[completions/got.org][got]]    | add, blame...                      |
 | [[completions/gopass.org][gopass]] | audit, config...                   |
 | [[completions/man.org][man]]    | man pages                          |
+| [[completions/mpc.org][mpc]]    | play, load, toggle...              |
 | [[completions/rc.org][rc]]     | OpenBSD rc scripts and rc commands |
 | [[completions/ssh.org][ssh]]    | ssh known hosts                    |
 | [[completions/vmd.org][vmd]]    | vmctl commands and VM names        |
 
 ** Extensions
 
-| Name       | Description                                               |
-|------------+-----------------------------------------------------------|
-| [[extensions/fonts.org][fonts]]      | Load fonts from common locations.                         |
-| [[extensions/fzf.org][fzf]]        | -                                                         |
-| [[extensions/git-prompt.org][git-prompt]] | A port of git-prompt for KSH.                             |
-| [[extensions/k.org][k]]          | A tool to quickly change directories.                     |
-| [[extensions/nocolor.org][nocolor]]    | Disable terminal color options for many tools.            |
-| [[extensions/openbsd.org][openbsd]]    | A set of tools for working with the OpenBSD source trees. |
+| Name       | Description                                                  |
+|------------+--------------------------------------------------------------|
+| [[extensions/fonts.org][fonts]]      | Load fonts from common locations.                            |
+| [[extensions/fzf.org][fzf]]        | -                                                            |
+| [[extensions/git-prompt.org][git-prompt]] | A port of git-prompt for KSH.                                |
+| [[extensions/got.org][got]]        | Adds PS1 support for got, as well as a few helper functions. |
+| [[extensions/k.org][k]]          | A tool to quickly change directories.                        |
+| [[extensions/nocolor.org][nocolor]]    | Disable terminal color options for many tools.               |
+| [[extensions/openbsd.org][openbsd]]    | A set of tools for working with the OpenBSD source trees.    |
 
 
 ** Prompts
 
 | Name       | Example                        | Extensions used |
 |------------+--------------------------------+-----------------|
-| [[prompts/q.org][q]]          | ~qbit@litr[0]:~$~              | git-prompt      |
+| [[prompts/q.org][q]]          | ~qbit@litr[0]:~$~              | git-prompt, got |
 | [[prompts/plain.org][plain]]      | ~ litr:~/src/ohmyksh/prompts$~ | -               |
 | [[prompts/og-openbsd.org][og-openbsd]] | ~$~                            | -               |
 | [[prompts/9.org][9]]          | ~%~                            | -               |
@@ -46,7 +49,7 @@ Have your cake and eat it too!
 
 #+begin_src shell
 OHMYKSH_DIR=/home/qbit/src/ohmyksh
-. ~${OHMYKSH_DIR}/ohmy.ksh
+. ${OHMYKSH_DIR}/ohmy.ksh
 
 set -A my_paths -- \
 	/usr/ports/infrastructure/bin \
