@@ -1,0 +1,9 @@
+* pkgup
+
+~pkgup~ uses [[https://github.com/neutralinsomniac/obsdpkgup][obsdpkgup]] to provide [[https://man.openbsd.org/pkg_add][pkg_add]] a shortened list of packages that need
+updating. For more information on how this works, see `obsdpkgup`'s
+[[https://github.com/neutralinsomniac/obsdpkgup#rationale][documentation]].
+
+| Function | Description                                                             |
+|----------+-------------------------------------------------------------------------|
+| ~pkgup~  | Convenience function intended to have its result piped to ~pkg_add(1)~. |
