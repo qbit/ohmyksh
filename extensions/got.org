@@ -2,7 +2,9 @@
 
 This extension adds helper functions to the [[https://gameoftrees.org/][got]] tool.
 
-| Function   | Description                                                             |
-|------------+-------------------------------------------------------------------------|
-| ~got-push~ | Pushes (~git push~) from the bare repository found in ~.got/repository~ |
+| Function    | Description                                                             |
+|-------------+-------------------------------------------------------------------------|
+| ~got-push~  | Pushes (~git push~) from the bare repository found in ~.got/repository~ |
+| ~got-sync~  | Rebase ~master~ on top of ~[remote]/master~. Defaults to ~origin~.      |
+| ~__got_ps1~ | Current got branch. Intended to be used in ~$PS1~.                      |
 

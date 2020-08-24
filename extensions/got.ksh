@@ -16,6 +16,14 @@ function got-push {
 	(cd "$r" && git push "$@")
 }
 
+function got-sync {
+	local _remote
+	_remote=$1
+	[ -z $_remote ] &&  _remote="origin"
+	got fetch "$_remote" && got update -b "$_remote/master" && \
+		got rebase master
+}
+
 function __got_ps1 {
 	local _format _branch _status
 	_format=$1
