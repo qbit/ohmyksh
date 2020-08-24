@@ -10,6 +10,7 @@ The following functions are added:
 | maintains() | Similar to ~port()~, this will display the ~$MAINTAINER~ of a port passed in as the first argument. |
 | pclean()    | Remove ~.orig~ and empty files from ~$CWD~.                                                         |
 | port()      | Like ~src()~, but for ~/usr/ports~.                                                                 |
+| port_grep() | Recursively search ports tree for [file]'s that contain [pattern].                                  |
 | seq()       | A shell implementation of Linux's [[https://linux.die.net/man/1/seq][seq(1)]] command. It supports alpha and numeric ranges.             |
 | src()       | Similar to plan9's [[http://man.9front.org/1/src][src(1)]] command. It drops you to ~/usr/src/*/<arg 1>~.                            |
 

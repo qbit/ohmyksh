@@ -8,6 +8,13 @@ port() {
 		return
 }
 
+port_grep() {
+	local _usage
+	_usage="port_grep [file] [pattern]"
+	[ -z $1 ] || [ -z $2 ] && echo $_usage
+	[ ! -z $1 ] && [ ! -z $2 ] && find /usr/ports -iname "${1}" -exec grep -iH ${2} {} \;
+}
+
 pclean() {
 	find . -name \*.orig -exec rm {} \;
 	find . -size 0 -exec rm {} \;
