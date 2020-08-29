@@ -2,6 +2,8 @@
 
 #${DEBUG}
 
+OHMY_DO=${OHMY_DO:-doas}
+
 # Stub our load functions
 paths() {
 	return 0
