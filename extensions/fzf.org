@@ -1,0 +1,9 @@
+* fzf
+
+** Functions
+| Name | Description                     |
+|------+---------------------------------|
+| zh   | Interactive shell history.      |
+| zpkg | Interactive package add/remove. |
+
+
