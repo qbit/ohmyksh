@@ -5,11 +5,8 @@
 function got-push {
         local r
 	r=$(set -e; got info | awk '$1 ~ "^repository:" {print $2}')
-	if [ "$r" != "" ]; then
-		(cd "$r" && git push "$@")
-	else
-		return 1
-	fi
+	[ -z "$r" ] && return 1
+	(cd "$r" && git push "$@")
 }
 
 function got-sync {

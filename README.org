@@ -41,7 +41,7 @@ Have your cake and eat it too!
 | Name       | Example                        | Extensions used |
 |------------+--------------------------------+-----------------|
 | [[prompts/q.org][q]]          | ~qbit@litr[0]:~$~              | git-prompt, got |
-| [[prompts/plain.org][plain]]      | ~ litr:~/src/ohmyksh/prompts$~ | -               |
+| [[prompts/plain.org][plain]]      | ~litr:~/src/ohmyksh/prompts$~ | -               |
 | [[prompts/og-openbsd.org][og-openbsd]] | ~$~                            | -               |
 | [[prompts/9.org][9]]          | ~%~                            | -               |
 
