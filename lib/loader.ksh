@@ -80,4 +80,3 @@ reload() {
 	reload_completions
 	reload_extensions
 }
-
