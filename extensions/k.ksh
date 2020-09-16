@@ -21,7 +21,7 @@ k() {
 	else
 		K=~/.k
 		case $1 in
-		clean)	sort $K | uniq > ${K}.tmp && mv ${K}.tmp ${K};;
+		clean)	sort -u $K -o ${K};;
 		rm)	sed -i -E "\#^${PWD}\$#d" ${K};;
 		ls)	cat ${K};;
 		*)	cd "$(grep -e "$1" ${K} | head -n 1)";;
