@@ -22,7 +22,7 @@ k() {
 		K=~/.k
 		case $1 in
 		clean)	sort -u $K -o ${K};;
-		rm)	sed -i -E "\#^${PWD}\$#d" ${K};;
+		rm)	sed -i -E "\#^${2:-${PWD}}\$#d" ${K};;
 		ls)	cat ${K};;
 		*)	cd "$(grep -e "$1" ${K} | head -n 1)";;
 		esac
