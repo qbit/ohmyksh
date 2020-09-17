@@ -14,4 +14,5 @@ set -A complete_git_1 -- \
 	range-diff rebase reset restore revert rm \
 	shortlog show sparse-checkout stash status submodule switch \
 	tag \
-	worktree
+	worktree \
+	`git config --get-regexp ^alias\. | awk -F '[\. ]' '{ print $2 }'`
