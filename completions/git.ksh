@@ -1,18 +1,4 @@
 #: | git | add, fetch... |
 set -A complete_git_1 -- \
-	add am archive \
-	bisect branch bundle \
-	checkout cherry-pick citool clean clone commit config \
-	describe diff \
-	fetch format-patch \
-	gc grep gui \
-	init \
-	log \
-	merge mv \
-	notes \
-	pull push \
-	range-diff rebase reset restore revert rm \
-	shortlog show sparse-checkout stash status submodule switch \
-	tag \
-	worktree \
+	`man -cT man git | grep -o 'git-[a-z-]*' | sort -u | cut -d '-' -f2-` \
 	`git config --get-regexp ^alias\. | awk -F '[\. ]' '{ print $2 }'`
