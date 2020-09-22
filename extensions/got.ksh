@@ -17,6 +17,22 @@ function got-sync {
 		got rebase master
 }
 
+function got-commit-v {
+	local _width _session _args
+
+	_args="$@"
+	_session="got-commit-v"
+
+	tmux split-window -p 60
+
+	tmux select-pane -t 2
+	tmux send-keys "got diff $_args | less" C-m
+
+	tmux select-pane -t 1
+	tmux send-keys "clear" C-m
+	tmux send-keys "got commit $_args"
+}
+
 function __got_ps1 {
 	local _format _branch _status
 	_format=$1
