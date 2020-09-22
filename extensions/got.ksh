@@ -21,7 +21,6 @@ function got-commit-v {
 	local _width _session _args
 
 	_args="$@"
-	_session="got-commit-v"
 
 	tmux split-window -p 60
 
