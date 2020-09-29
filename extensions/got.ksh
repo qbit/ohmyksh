@@ -17,6 +17,24 @@ function got-sync {
 		got rebase master
 }
 
+function got-clean {
+	local _opt
+	_opt=$1
+	for f in $(got status | grep ^? | awk '{print $2}'); do
+		case "$_opt" in
+			-f)
+				rm -vf "$f"
+				;;
+			-i)
+				rm -vi "$f"
+				;;
+			*)
+				echo "rm $f"
+				;;
+		esac
+	done
+}
+
 function got-commit-v {
 	local _width _session _args
 
