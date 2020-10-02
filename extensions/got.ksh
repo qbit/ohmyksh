@@ -10,11 +10,14 @@ function got-push {
 }
 
 function got-sync {
-	local _remote
+	local _remote _info _branch
 	_remote=$1
-	[ -z $_remote ] &&  _remote="origin"
-	got fetch "$_remote" && got update -b "$_remote/master" && \
-		got rebase master
+	_info="$(got info)"
+	_branch="$(echo "$_info" | awk '/branch reference:/ {l = split($NF, a, "/"); print a[l]}')"
+	[ -z $_remote ] && _remote="origin"
+	[ -z $_branch ] && _branch="main"
+	got fetch "$_remote" && got update -b "$_remote/$_branch" && \
+		got rebase $_branch
 }
 
 function got-clean {
