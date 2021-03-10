@@ -20,6 +20,13 @@ pclean() {
 	find . -size 0 -exec rm {} \;
 }
 
+revert_diffs() {
+	for i in $(find . -name \*.orig); do
+		F=$(echo $i | sed 's/\.orig//')
+		mv -v "$i" "$F"
+	done
+}
+
 cdw() {
 	cd $(make show=WRKSRC)
 }
