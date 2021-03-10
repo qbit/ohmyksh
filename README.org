@@ -4,8 +4,8 @@ Have your cake and eat it too!
 
 ~ohmyksh~ is a framework for expanding OpenBSD's [[https://man.openbsd.org/ksh][ksh]]. It offers:
 
-- completions :: for common things like [[https://man.openbsd.org/man][man]] pages, [[https://man.openbsd.org/ssh][ssh]] known_hosts and git
-  commands.
+- completions :: for common things like [[https://man.openbsd.org/man][man]] pages, [[https://man.openbsd.org/ssh][ssh]] known_hosts and git (and
+  got!) commands. 
 - extensions :: to import bulk functionality, including git-prompt, OpenBSD
   specific tooling, disabling color.. etc. 
 - prompts :: a decent selection of useful prompts.
@@ -14,41 +14,41 @@ Have your cake and eat it too!
 
 | Name   | Completes                          |
 |--------+------------------------------------|
-| [[completions/git.org][git]]    | add, fetch...                      |
-| [[completions/got.org][got]]    | add, blame...                      |
-| [[completions/gopass.org][gopass]] | audit, config...                   |
-| [[completions/man.org][man]]    | man pages                          |
-| [[completions/mpc.org][mpc]]    | play, load, toggle...              |
-| [[completions/rc.org][rc]]     | OpenBSD rc scripts and rc commands |
-| [[completions/ssh.org][ssh]]    | ssh known hosts                    |
-| [[completions/vmd.org][vmd]]    | vmctl commands and VM names        |
+| [[file:completions/git.org][git]]    | add, fetch...                      |
+| [[file:completions/got.org][got]]    | add, blame...                      |
+| [[file:completions/gopass.org][gopass]] | audit, config...                   |
+| [[file:completions/man.org][man]]    | man pages                          |
+| [[file:completions/mpc.org][mpc]]    | play, load, toggle...              |
+| [[file:completions/rc.org][rc]]     | OpenBSD rc scripts and rc commands |
+| [[file:completions/ssh.org][ssh]]    | ssh known hosts                    |
+| [[file:completions/vmd.org][vmd]]    | vmctl commands and VM names        |
 
 ** Extensions
 
 | Name       | Description                                                  |
 |------------+--------------------------------------------------------------|
-| [[extensions/fonts.org][fonts]]      | Load fonts from common locations.                            |
-| [[extensions/fzf.org][fzf]]        | -                                                            |
-| [[extensions/git-prompt.org][git-prompt]] | A port of git-prompt for KSH.                                |
-| [[extensions/got.org][got]]        | Adds PS1 support for got, as well as a few helper functions. |
-| [[extensions/k.org][k]]          | A tool to quickly change directories.                        |
-| [[extensions/nocolor.org][nocolor]]    | Disable terminal color options for many tools.               |
-| [[extensions/openbsd.org][openbsd]]    | A set of tools for working with the OpenBSD source trees.    |
+| [[file:extensions/fonts.org][fonts]]      | Load fonts from common locations.                            |
+| [[file:extensions/fzf.org][fzf]]        | -                                                            |
+| [[file:extensions/git-prompt.org][git-prompt]] | A port of git-prompt for KSH.                                |
+| [[file:extensions/got.org][got]]        | Adds PS1 support for got, as well as a few helper functions. |
+| [[file:extensions/k.org][k]]          | A tool to quickly change directories.                        |
+| [[file:extensions/nocolor.org][nocolor]]    | Disable terminal color options for many tools.               |
+| [[file:extensions/openbsd.org][openbsd]]    | A set of tools for working with the OpenBSD source trees.    |
 
 
 ** Prompts
 
 | Name       | Example                        | Extensions used |
 |------------+--------------------------------+-----------------|
-| [[prompts/q.org][q]]          | ~qbit@litr[0]:~$~              | git-prompt, got |
-| [[prompts/plain.org][plain]]      | ~litr:~/src/ohmyksh/prompts$~ | -               |
-| [[prompts/og-openbsd.org][og-openbsd]] | ~$~                            | -               |
-| [[prompts/9.org][9]]          | ~%~                            | -               |
+| [[file:prompts/q.org][q]]          | ~qbit@litr[0]:~$~              | git-prompt, got |
+| [[file:prompts/plain.org][plain]]      | ~litr:~/src/ohmyksh/prompts$~ | -               |
+| [[file:prompts/og-openbsd.org][og-openbsd]] | ~$~                            | -               |
+| [[file:prompts/9.org][9]]          | ~%~                            | -               |
 
 ** Example usage
 
 #+begin_src shell
-OHMYKSH_DIR=/home/qbit/src/ohmyksh
+OHMYKSH_DIR=${HOME}/src/ohmyksh
 . ${OHMYKSH_DIR}/ohmy.ksh
 
 set -A my_paths -- \
@@ -75,3 +75,4 @@ alias vi=vim
 # the q prompt auto-loads the git-prompt extension
 set_prompt q
 #+end_src
+
