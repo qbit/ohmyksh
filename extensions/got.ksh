@@ -32,6 +32,7 @@ function got-clean {
 				rm -vi "$f"
 				;;
 			*)
+				echo "Use -f or -i to actually remove files."
 				echo "rm $f"
 				;;
 		esac
