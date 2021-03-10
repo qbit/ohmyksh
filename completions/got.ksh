@@ -1,28 +1,28 @@
 set -A complete_got_1 -- \
-	add \
-	bl blame \
-	bo backout \
-	br branch \
-	cat \
-	ci commit \
-	cl clone \
-	co checkout \
-	cy cherrypick \
-	di diff \
-	fe fetch \
-	he histedit \
-	ig integrate \
-	im import \
-	in init \
+	init \
+	import im \
+	clone cl \
+	fetch fe \
+	checkout co \
+	update up \
+	status st \
 	log \
-	rb rebase \
+	diff di \
+	blame bl \
+	tree tr \
 	ref \
-	rm remove \
-	rv revert \
-	sg stage \
-	st status \
+	branch br \
 	tag \
-	tr tree \
-	ug unstage \
-	up update
-
+	add \
+	remove rm \
+	revert rv \
+	commit ci \
+	cherrypick cy \
+	backout bo \
+	rebase rb \
+	histedit he \
+	integrate ig \
+	stage sg \
+	unstage ug \
+	cat \
+	info
