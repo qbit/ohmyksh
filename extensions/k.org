@@ -9,7 +9,8 @@ simple pattern matching.
 
 #+begin_src shell
   qbit@tal[0]:~$ k ohmy
-  qbit@tal[0]:~/src/ohmyksh got:(master)$ 
+  qbit@tal[0]:~/src/ohmyksh got:(master)$ k wip
+  qbit@tal[0]:/usr/ports/openbsd-wip got:(master) git:(master)$ 
 #+end_src
 
 *** Storing locations for later jumping
