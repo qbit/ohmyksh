@@ -1,0 +1,31 @@
+body {
+    font-family: Roboto, arial, sans-serif;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    
+}
+
+#table-of-contents {
+    float: left;
+    width: 25%;
+}
+
+#table-of-contents h2 {
+    font-size: 20px;
+}
+
+.outline-2 {
+    float: right;
+    width: 75%;
+}
+
+#postamble {
+    float: left;
+    width: 100%;
+}

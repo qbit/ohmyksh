@@ -4,11 +4,12 @@ Have your cake and eat it too!
 
 ~ohmyksh~ is a framework for expanding OpenBSD's [[https://man.openbsd.org/ksh][ksh]]. It offers:
 
-- completions :: for common things like [[https://man.openbsd.org/man][man]] pages, [[https://man.openbsd.org/ssh][ssh]] known_hosts and git (and
-  got!) commands. 
+- completions :: for common things like [[https://man.openbsd.org/man][man]] pages, [[https://man.openbsd.org/ssh][ssh]] ~known_hosts~ and ~git~ (and
+  ~got~!) commands. 
 - extensions :: to import bulk functionality, including git-prompt, OpenBSD
   specific tooling, disabling color.. etc. 
-- prompts :: a decent selection of useful prompts.
+- prompts :: a decent selection of useful, minimal prompts.
+  
 
 ** Completions
 

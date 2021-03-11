@@ -1,0 +1,44 @@
+#+TITLE: Extension: k
+
+~k~ is a function that allows one to quickly jump to directories based off
+simple pattern matching.
+
+** Usage
+
+*** Jumping to known locations
+
+#+begin_src shell
+  qbit@tal[0]:~$ k ohmy
+  qbit@tal[0]:~/src/ohmyksh got:(master)$ 
+#+end_src
+
+*** Storing locations for later jumping
+
+#+begin_src shell
+  cd ~/directory/with/long/name
+  k
+#+end_src
+
+ After running ~k~, the current directory will be stored in ~~/.k~.
+
+ From this point on, you can reach the directory from anywhere by running ~k
+ long name~.
+
+*** Removing locations from jump list
+
+#+begin_src shell
+  k long name
+  k rm
+#+end_src
+
+*** Listing jumpable directories
+
+#+begin_src shell
+  k ls
+#+end_src
+
+*** Sorting / removing duplicates
+
+#+begin_src shell
+  k clean
+#+end_src
