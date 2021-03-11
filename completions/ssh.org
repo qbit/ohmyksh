@@ -1,3 +1,1 @@
 #+TITLE: Completions: ssh
-
-* ssh completions

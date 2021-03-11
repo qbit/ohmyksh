@@ -1,7 +1,5 @@
 #+TITLE: ohmyksh
 
-* ohmyksh
-
 Have your cake and eat it too!
 
 ~ohmyksh~ is a framework for expanding OpenBSD's [[https://man.openbsd.org/ksh][ksh]]. It offers:

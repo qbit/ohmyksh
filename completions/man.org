@@ -1,3 +1,1 @@
 #+TITLE: Completions: man
-
-* man completions
