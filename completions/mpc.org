@@ -1,1 +1,36 @@
 #+TITLE: Completions: mpc
+
+** Level 1
+
+The following completions are available for level one on MPC.
+
+#+begin_src shell
+	add \
+	cdprev channels clear clearerror \
+	consume crop crossfade current \
+	del disable \
+	enable \
+	find findadd \
+	idle idleloop insert \
+	list listall load ls lsplaylists \
+	mixrampdb mixrampdelay move \
+	next \
+	outputs outputset \
+	pause pause-if-playing play playlist prev prio \
+	random repeat replaygain rescan rm \
+	save search searchadd searchplay seek \
+	sendmessage shuffle single stats \
+	sticker stop subscribe \
+	toggle toggleoutput \
+	update \
+	version volume \
+	waitmessage
+#+end_src
+
+** Level 2
+
+#+begin_src shell
+	set -A complete_mpc_2 -- $(mpc lsplaylists | sort)
+#+end_src
+
+*Note:* Level 2 is only populated if ~mpd~ is running.

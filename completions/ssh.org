@@ -1,1 +1,10 @@
 #+TITLE: Completions: ssh
+
+** All Levels
+
+#+begin_src shell
+${HOST_LIST[*]}
+#+end_src
+
+~HOST_LIST~ is a combination of ~/etc/ssh/ssh_known_hosts~ and
+~~/.ssh/known_hosts~.

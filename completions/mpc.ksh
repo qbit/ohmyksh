@@ -18,7 +18,8 @@ set -A complete_mpc_1 -- \
 	toggle toggleoutput \
 	update \
 	version volume \
-	waitmessage \
+	waitmessage
+
 pgrep -fq '/usr/local/sbin/mpd'
 if [ $? = 0 ]; then
 	set -A complete_mpc_2 -- $(mpc lsplaylists | sort)

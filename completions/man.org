@@ -1,1 +1,19 @@
 #+TITLE: Completions: man
+
+** Leven 1
+
+Completions for man pages are found via:
+
+#+begin_src shell
+	MANPATH=/usr/share/man man -k Nm~. | cut -d\( -f1 | tr -d , | \
+		sort | \
+		uniq > $MAN_CACH
+#+end_src
+
+Currently the cache is never re-created. Operating without a cache causes
+significant load times. If one requires the cache to be refreshed they can run
+the following in ~.xsession~ or similar:
+
+#+begin_src shell
+rm -f ${LOAD_PATH}/cache/man
+#+end_src

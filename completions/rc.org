@@ -1,1 +1,13 @@
 #+TITLE: Completions: rc
+
+** Level 1
+
+#+begin_src shell
+disable enable get ls order set restart start stop
+#+end_src
+
+** Level 2
+
+#+begin_src shell
+$(rcctl ls all)
+#+end_src

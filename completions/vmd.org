@@ -1,1 +1,17 @@
 #+TITLE: Completions: vmd
+
+*Note:* Completions are only loaded if ~vmd~ is running.
+
+** Level 1
+
+#+begin_src shell
+console load reload start stop reset status send receive
+#+end_src
+
+** All Levels
+
+#+begin_src shell
+$(vmctl status | awk '!/NAME/{print $NF}')
+#+end_src
+
+
