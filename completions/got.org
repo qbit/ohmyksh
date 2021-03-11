@@ -1,3 +1,4 @@
+#+TITLE: Completions: got
 * got completions
 
 The ~got~ completion currently supports the following arguments:
