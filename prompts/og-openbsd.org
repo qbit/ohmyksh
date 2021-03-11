@@ -1,0 +1,14 @@
+#+TITLE: Prompts: og-openbsd
+
+** Blast from the past
+
+Back in the day OpenBSD's default ksh prompt was simply: ~$ ~! For root it was
+~# ~.
+
+#+begin_src shell
+  $ uname -a
+  OpenBSD tal.tapenet.org 6.9 GENERIC.MP#394 amd64
+  $ uptime
+   1:35PM  up  5:38, 1 user, load averages: 0.32, 0.21, 0.19
+  $ 
+#+end_src

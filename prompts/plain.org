@@ -1,0 +1,11 @@
+#+TITLE: Prompts: plain
+
+** OpenBSD's prompt with a cherry on top
+
+#+begin_src shell
+  tal:~$ uname -a
+  OpenBSD tal.tapenet.org 6.9 GENERIC.MP#394 amd64
+  tal:~$ uptime
+   1:37PM  up  5:39, 1 user, load averages: 0.08, 0.16, 0.16
+  tal:~$ 
+#+end_src

@@ -1,4 +1,6 @@
-* git-prompt
+#+TITLE: Extensions: git-prompt
+
+** About
 
 This extension is a port of the [[https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh][packaged git-prompt]] script to OpenBSD's ksh.
 

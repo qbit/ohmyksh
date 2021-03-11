@@ -1,4 +1,6 @@
-* openbsd
+#+TITLE: Extensions: openbsd
+
+** About
 
 This extension adds a number of useful OpenBSD specific tools.
 

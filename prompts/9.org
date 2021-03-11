@@ -1,0 +1,16 @@
+#+TITLE: Prompts: 9
+
+** An homage to plan9
+
+If you have ever used ~rc~ on plan9 or from plan9port, you will recognize this
+prompt!
+
+Extremely minimal:
+
+#+begin_src shell
+  % uname -a
+  OpenBSD tal.tapenet.org 6.9 GENERIC.MP#394 amd64
+  % uptime
+   1:34PM  up  5:36, 1 user, load averages: 0.27, 0.21, 0.19
+  % 
+#+end_src

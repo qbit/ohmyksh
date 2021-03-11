@@ -1,4 +1,4 @@
-* fzf
+#+TITLE: Extensions: fzf
 
 ** Functions
 | Name | Description                     |

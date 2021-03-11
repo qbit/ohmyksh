@@ -1,0 +1,19 @@
+#+TITLE: Prompts: q
+
+** My personal daily driver
+
+I have been using variations of this prompt for as long as I can remember.
+
+#+begin_src shell
+  qbit@tal[0]:~$ uname -a
+  OpenBSD tal.tapenet.org 6.9 GENERIC.MP#394 amd64
+  qbit@tal[0]:~$ uptime 
+   1:40PM  up  5:42, 1 user, load averages: 0.14, 0.14, 0.15
+  qbit@tal[0]:~$ cd src/ohmyksh
+  qbit@tal[0]:~/src/ohmyksh got:(master)$ cd /usr/ports/openbsd-wip
+  qbit@tal[0]:/usr/ports/openbsd-wip got:(master) git:(master)$ cd -
+  /home/qbit/src/ohmyksh
+  qbit@tal[0]:~/src/ohmyksh got:(master)$ invalidcommand
+  ksh: invalidcommand: not found
+  qbit@tal[127]:~/src/ohmyksh got:(master)$ 
+#+end_src

@@ -1,0 +1,15 @@
+#+TITLE: Extensions: fonts
+
+** Load fonts from common locations
+
+If ~$DISPLAY~ is set, the ~fonts~ extension will load fonts from common
+locations.
+
+Currently the locations are:
+
+| Directory                | Recursive |
+|--------------------------+-----------|
+| ~/.fonts                 | no        |
+| ~/.local/share/fonts     | no        |
+| /usr/local/share/fonts/* | yes       |
+

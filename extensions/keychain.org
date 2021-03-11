@@ -1,5 +1,11 @@
-* keychain
+#+TITLE: Extensions: keychain
+
+The ~keychain~ gives you a convenient place to auto-start / load your various
+agents (ssh, gpg).
 
 ** Variables
 
-- KEYCHAIN_OPTS :: --gpg2 --inherit any --agents ssh,gpg -q -Q
+| Option        | Default                                     |
+|---------------+---------------------------------------------|
+| KEYCHAIN_OPTS | --gpg2 --inherit any --agents ssh,gpg -q -Q |
+

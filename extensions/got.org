@@ -1,4 +1,6 @@
-* got
+#+TITLE: Extensions: got
+
+** Helper Functions
 
 This extension adds helper functions to the [[https://gameoftrees.org/][got]] tool.
 
