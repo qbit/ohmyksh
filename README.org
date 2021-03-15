@@ -14,16 +14,17 @@ Have your cake and eat it too!
 
 ** Completions
 
-| Name   | Completes                          |
-|--------+------------------------------------|
-| [[file:completions/git.org][git]]    | add, fetch...                      |
-| [[file:completions/got.org][got]]    | add, blame...                      |
-| [[file:completions/gopass.org][gopass]] | audit, config...                   |
-| [[file:completions/man.org][man]]    | man pages                          |
-| [[file:completions/mpc.org][mpc]]    | play, load, toggle...              |
-| [[file:completions/rc.org][rc]]     | OpenBSD rc scripts and rc commands |
-| [[file:completions/ssh.org][ssh]]    | ssh known hosts                    |
-| [[file:completions/vmd.org][vmd]]    | vmctl commands and VM names        |
+| Name   | Completes                              |
+|--------+----------------------------------------|
+| [[file:completions/git.org][git]]    | add, fetch...                          |
+| [[file:completions/got.org][got]]    | add, blame...                          |
+| [[file:completions/gopass.org][gopass]] | audit, config...                       |
+| [[file:completions/man.org][man]]    | man pages                              |
+| [[file:completions/mpc.org][mpc]]    | play, load, toggle...                  |
+| [[file:completions/rc.org][rc]]     | OpenBSD rc scripts and rc commands     |
+| [[file:completions/ssh.org][ssh]]    | ssh known hosts                        |
+| [[file:completions/vmd.org][vmd]]    | vmctl commands and VM names            |
+| [[file:completions/ogvt.org][ogvt]]   | reminders for ogvt (-pub, -sig, -file) |
 
 ** Extensions
 

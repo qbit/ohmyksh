@@ -29,3 +29,21 @@ body {
     float: left;
     width: 100%;
 }
+
+table { 
+    border-collapse: collapse; 
+    border: 1px solid black;
+} 
+  
+th, td { 
+    text-align: left; 
+    padding: 8px; 
+} 
+  
+tr:nth-child(even) { 
+    background-color: #f9fafc; 
+} 
+
+pre {
+    border-radius: 15px;
+}

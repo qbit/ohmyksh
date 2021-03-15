@@ -1,0 +1,11 @@
+#+TITLE: Completion: ogvt
+
+Completions for [[https://pkg.go.dev/suah.dev/ogvt][ogvt]].
+
+** All levels
+
+#+begin_src ksh
+	-file \
+	-pub \
+	-sig
+#+end_src
