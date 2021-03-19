@@ -5,9 +5,7 @@
 Completions for man pages are found via:
 
 #+begin_src shell
-	MANPATH=/usr/share/man man -k Nm~. | cut -d\( -f1 | tr -d , | \
-		sort | \
-		uniq > $MAN_CACH
+ls /usr/{share,X11R6,local}/man/man[1-9] | sort -u > $MAN_CACHE
 #+end_src
 
 Currently the cache is never re-created. Operating without a cache causes
