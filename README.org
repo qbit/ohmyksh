@@ -87,3 +87,12 @@ Have your cake and eat it too!
   set_prompt q
 #+end_src
 
+** Contributing
+
+Contributions can be sent in via Github PRs or via emailing a patch to
+[[~qbit/ohmyksh@lists.sr.ht][~qbit/ohmyksh@lists.sr.ht]].
+
+If you do send in a contribution, please include a .org file which describes the
+feature set. The org syntax is available [[https://orgmode.org/quickstart.html][here]], however, one will likely be able
+to just copy an existing file and modify it.
+
