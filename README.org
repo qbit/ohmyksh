@@ -1,6 +1,7 @@
 #+TITLE: ohmyksh
 
 ** About
+
 Have your cake and eat it too!
 
 ~ohmyksh~ is a framework for expanding OpenBSD's [[https://man.openbsd.org/ksh][ksh]]. It offers:
@@ -28,17 +29,17 @@ Have your cake and eat it too!
 
 ** Extensions
 
-| Name       | Description                                                  |
-|------------+--------------------------------------------------------------|
-| [[file:extensions/fonts.org][fonts]]      | Load fonts from common locations.                            |
-| [[file:extensions/fzf.org][fzf]]        | -                                                            |
-| [[file:extensions/git-prompt.org][git-prompt]] | A port of git-prompt for KSH.                                |
-| [[file:extensions/got.org][got]]        | Adds PS1 support for got, as well as a few helper functions. |
-| [[file:extensions/k.org][k]]          | A tool to quickly change directories.                        |
-| [[file:extensions/keychain.org][keychain]]   | Wrapper for [[https://www.funtoo.org/Keychain][Funtoo's Keychain]] utility.                       |
-| [[file:extensions/nocolor.org][nocolor]]    | Disable terminal color options for many tools.               |
-| [[file:extensions/openbsd.org][openbsd]]    | A set of tools for working with the OpenBSD source trees.    |
-| [[file:extensions/pkgup.org][pkgup]]      | Utility to speed up OpenBSD' [[https://man.openbsd.org/pkg_add][pkg_add(1)]].                     |
+| Name       | Description                                                             |
+|------------+-------------------------------------------------------------------------|
+| [[file:extensions/fonts.org][fonts]]      | Load fonts from common locations.                                       |
+| [[file:extensions/fzf.org][fzf]]        | Set of interactive wrappers for things like packages and shell history. |
+| [[file:extensions/git-prompt.org][git-prompt]] | A port of git-prompt for KSH.                                           |
+| [[file:extensions/got.org][got]]        | Adds PS1 support for got, as well as a few helper functions.            |
+| [[file:extensions/k.org][k]]          | A tool to quickly change directories.                                   |
+| [[file:extensions/keychain.org][keychain]]   | Wrapper for [[https://www.funtoo.org/Keychain][Funtoo's Keychain]] utility.                                  |
+| [[file:extensions/nocolor.org][nocolor]]    | Disable terminal color options for many tools.                          |
+| [[file:extensions/openbsd.org][openbsd]]    | A set of tools for working with the OpenBSD source trees.               |
+| [[file:extensions/pkgup.org][pkgup]]      | Utility to speed up OpenBSD' [[https://man.openbsd.org/pkg_add][pkg_add(1)]].                                |
 
 
 ** Prompts
