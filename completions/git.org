@@ -8,6 +8,6 @@ The completions for level one are dynamically created using the following
 commands:
 
 #+begin_src ksh
-	$(man -cT man git | grep -o 'git-[a-z-]*' | sort -u | cut -d '-' -f2-) \
+	$(git --list-cmds=main) \
 	$(git config --get-regexp ^alias\. | awk -F '[\. ]' '{ print $2 }')
 #+end_src
