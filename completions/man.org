@@ -5,7 +5,10 @@
 Completions for man pages are found via:
 
 #+begin_src shell
-ls /usr/{share,X11R6,local}/man/man[1-9] | sort -u > $MAN_CACHE
+for i in /usr{,/X11R6,/local}{,/share}/man/{,cat,man}[1-9lnp]{,f,p}
+do
+	test -d $i && ls $i
+done | rev | cut -d. -f2- | rev | sort -u > $MAN_CACHE
 #+end_src
 
 Currently the cache is never re-created. Operating without a cache causes
