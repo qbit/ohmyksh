@@ -1,5 +1,15 @@
+zpatch() {
+	if [ -z $OHMYPATCHES ]; then
+		echo "please set OHMYPATCHES to the directory that contains your patches."
+		return 1
+	fi
+
+	local _patch_file="$(ls ${OHMYPATCHES}/* | fzf)"
+	/usr/bin/patch $@ < "${_patch_file}"
+}
+
 zh() {
-	fc -ln | eval `fzf`
+	fc -ln | eval $(fzf)
 }
 
 zpkg() {

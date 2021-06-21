@@ -5,5 +5,6 @@
 |------+---------------------------------|
 | zh   | Interactive shell history.      |
 | zpkg | Interactive package add/remove. |
+| zpatch | Interactive function for applying patches. |
 
 
