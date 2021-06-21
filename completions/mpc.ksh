@@ -20,7 +20,4 @@ set -A complete_mpc_1 -- \
 	version volume \
 	waitmessage
 
-pgrep -fq '/usr/local/sbin/mpd'
-if [ $? = 0 ]; then
-	set -A complete_mpc_2 -- $(mpc lsplaylists | sort)
-fi
+set -A complete_mpc_2 -- $(mpc lsplaylists | sort)
